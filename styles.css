@@ -1,0 +1,101 @@
+*{ 
+    font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+
+header {
+    background-image: url(images/background_header2.png);
+    background-size: cover; /* Asegura que la imagen cubra todo el header */
+    background-position: center; /* Centra la imagen en el header */
+    height: 150px; /* Ajusta la altura del header */
+}
+
+.header {
+    display: flex; /* Usa flexbox para alinear los elementos en una fila */
+    justify-content: space-between; /* Coloca el logo a la izquierda y el nav a la derecha */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0 20px; /* Espaciado interno horizontal */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+#Logo_Princ {
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin: 0; /* Elimina cualquier margen adicional */
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Añade una sombra al logo */
+}
+
+nav {
+    margin: 0; /* Elimina cualquier margen adicional */
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Coloca los elementos del menú en línea */
+    padding: 0; /* Elimina el padding del ul */
+    margin: 0; /* Elimina el margen del ul */
+}
+
+nav ul li {
+    margin-left: 20px; /* Añade espacio entre los elementos del menú */
+    display: flex; /* Asegura que los enlaces se alineen correctamente */
+    position: relative; /* Necesario si se usa pseudo-elemento para efectos */
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Cambia el color de fondo al pasar el ratón */
+    border-radius: 5px; /* Añade bordes redondeados al hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del elemento */
+    color: black;
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: rgb(83, 83, 83); /* Color del texto */
+    font-weight: bold;
+    padding: 10px 15px; /* Añade espacio interno para que el hover sea más visible */
+    display: block; /* Asegura que el enlace ocupe todo el área del `li` */
+}
+
+
+.contenedor-css{
+    margin-top: 1%;
+}
+
+.comida{
+    width: 800px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.comida:hover{
+    transform: scale(1.05);
+    transition: 1s;
+    padding-bottom: 10px;
+}
+/* .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.contenedor-images{
+    display: flex;
+    gap: 100px;
+}
+
+
+.h2-style{
+    padding-top: 10px;
+    text-align: left;
+}
+
+.h2-style:hover{
+... (3 líneas restantes)
